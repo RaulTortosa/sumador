@@ -16,10 +16,14 @@ public class ASumar {
         }else if (numero.length() == 1) { //Si solo hay un numero
             return (numero + " = " + numero);
         } else {
-            for (int i = 0; i < cadena.length(); i++) {
-                String digito = cadena.substring(i, 1); // Cadena de un dígito.
-                suma = suma + Integer.getInteger(digito);  //Conversión de caracter a entero
-                if (i == cadena.length()-1) { //Cuando sea el ultimo digito que ponga = en vez de +
+        	int contador = numero.length();
+        	String caracter;
+            for (int i = 0; i < numero.length(); i++) {
+                caracter = numero.substring(i, i+1); // Cadena de un dígito.
+                int digito = Integer.parseInt(caracter); //Conversión de caracter a entero
+                suma = suma + digito;  
+                contador--;
+                if (contador == 0) { //Cuando sea el ultimo digito que ponga = en vez de +
                 	salida += digito+" =";
                 } else {
                     salida += digito+" + ";
