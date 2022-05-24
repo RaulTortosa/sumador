@@ -20,5 +20,11 @@ class TestASumar {
 		assertEquals("Negativo. Siempre negativo", resultado);
 	}
 	
+	@Test
+	public void testSuma() {
+		ASumar sum = new ASumar();
+		String resultado = sum.sumativo("123");
+		assertEquals("1 + 2 + 3 = 6", resultado);
+	}
 
 }
