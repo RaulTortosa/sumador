@@ -9,8 +9,8 @@ class TestASumar {
 	@Test
 	public void testUnaCifra() {
 		ASumar sum = new ASumar();
-		String resultado = sum.sumativo("5");
-		assertEquals("5 = 5", resultado);
+		String resultado = sum.sumativo("7");
+		assertEquals("7 = 7", resultado);
 	}
 
 }
