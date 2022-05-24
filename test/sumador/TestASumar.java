@@ -17,7 +17,7 @@ class TestASumar {
 	public void testNegativo() {
 		ASumar sum = new ASumar();
 		String resultado = sum.sumativo("-7");
-		assertEquals("7 = 7", resultado);
+		assertEquals("Negativo. Siempre negativo", resultado);
 	}
 	
 
