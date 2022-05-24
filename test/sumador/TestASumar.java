@@ -23,8 +23,8 @@ class TestASumar {
 	@Test
 	public void testSuma() {
 		ASumar sum = new ASumar();
-		String resultado = sum.sumativo("123");
-		assertEquals("1 + 2 + 3 = 6", resultado);
+		String resultado = sum.sumativo("146");
+		assertEquals("1 + 4 + 6 = 11", resultado);
 	}
 
 }
